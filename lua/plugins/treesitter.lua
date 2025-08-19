@@ -4,6 +4,7 @@ return {
   lazy = false,
   config = function()
     require("nvim-treesitter.configs").setup {
+      auto_install = true,
       ensure_installed = {
         "lua", "markdown", "c", "cpp", "javascript", "html",
         "query", "vim", "vimdoc"
